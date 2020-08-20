@@ -1,0 +1,13 @@
+# Random data... could be json / yaml / toml
+webApp:
+  name: Appening
+  description: fixes everything
+  version: 1.0
+mobileApp:
+  name: Icony
+  description: breaks everything
+  version: 0.1-alpha
+monolith:
+  name: Slate
+  description: runs forever
+  version: 9.9

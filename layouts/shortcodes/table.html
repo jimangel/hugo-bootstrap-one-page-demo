@@ -1,0 +1,8 @@
+{{/* Converts a markdown table to html and adds in extra classes specified in shortcode declaration */}}
+
+{{ $htmlTable := .Inner | markdownify }}
+{{ $class := .Get 0 }}
+{{ $old := "<table>" }}
+{{ $new := printf "<table class=\"table %s\">" $class }}
+{{ $htmlTable := replace $htmlTable $old $new }}
+{{ $htmlTable | safeHTML }}

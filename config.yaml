@@ -1,0 +1,9 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+params:
+  title: "Hugo Bootstrap one-page demo"
+  background: "#345282"
+  bootstrap: "4.5.2"
+markup:
+  highlight:
+    style: friendly
