@@ -15,6 +15,8 @@
     img {
       display: block;
       margin: 0 auto;
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -30,7 +32,7 @@
       <div class="row">
 
           <!-- title text (centered) -->
-          <div class="mx-auto text-center" style="background-color: #fff;width:800px;padding:20px;position:relative;top: 80px;">
+          <div class="mx-auto text-center" style="background-color: #fff;width: min( 100vw, 800px);padding:20px;position:relative;top: 80px;">
             <h1>{{ .Site.Params.title }}</h1>
           </div>
 
