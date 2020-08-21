@@ -5,3 +5,11 @@
 [build.environment]
   HUGO_VERSION = "0.74.3"
   HUGO_ENV = "production"
+  
+[[headers]]
+  for = "/*"
+  [headers.values]
+  Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' stackpath.bootstrapcdn.com; img-src 'self' https:;"
+  X-Frame-Options = "DENY"
+  X-Content-Type-Options = "nosniff"
+  X-XSS-Protection = "1; mode=block"

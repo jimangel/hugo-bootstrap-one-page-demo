@@ -43,6 +43,22 @@ Deploying on Netlify (free) is the easiest way to get started.
 
 To effectively use this setup, start by looking at `layouts/index.html` and `content/_index.html`.
 
+## Security Headers
+
+If you add external sources of CSS, scripts, or media to this demo; know that the `Content-Security-Policy` header is set in the [`netlify.toml`](netlify.toml) file. [Click here](https://content-security-policy.com/) for more information about possible values.
+
+Example configuration:
+
+```
+[[headers]]
+  for = "/*"
+  [headers.values]
+  Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' stackpath.bootstrapcdn.com; img-src 'self' https:;"
+  X-Frame-Options = "DENY"
+  X-Content-Type-Options = "nosniff"
+  X-XSS-Protection = "1; mode=block"
+```
+
 ## Disclaimer
 
 This is not the proper way to use Hugo. Please read the documentation if you plan on using it for more than a single page site. Also, there's plenty of great starter themes available such as [docsy](https://www.docsy.dev/) or [Academic](https://themes.gohugo.io/academic/).

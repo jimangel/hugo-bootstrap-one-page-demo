@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>{{ .Site.Params.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
   <!-- make "pre" code blocks look better and center images -->
   <style>
@@ -22,7 +23,7 @@
 
 <body>
   <!-- background bar -->
-  <div class="stripe" style="background-color:{{ .Site.Params.background }};position:absolute;height:125px;width:100%;z-index:-1"></div>
+  <div class="stripe" style="background-color:{{ .Site.Params.background }};position:absolute;height:125px;width:100vw;z-index:-1;"></div>
   
   <!-- content -->
   <div class="container">
