@@ -1,6 +1,12 @@
 # Hugo Bootstrap one-page
 
+![](img/preview.png)
+
+[Check out the latest demo](https://hugo-bootstrap-demo.netlify.app/)
+
 For people who want a **single page** static site with Bootstrap styling. No themes and extremely bare-bones.
+
+Included is the ability to parse structured data from a file (json, yaml, or toml) into a table.
 
 Ideal for landing pages, status pages, or general basic info.
 
@@ -18,7 +24,7 @@ Deploying on Netlify (free) is the easiest way to get started.
 1. Install [Hugo](https://gohugo.io/getting-started/installing/)
 1. Clone this repo and change to the new directory
 1. Edit `config.yaml` to match your desired settings
-1. Run: `hugo serve`
+1. Run: `hugo server`
 
 ## Component Overview
 
