@@ -3,7 +3,7 @@ languageCode: "en-us"
 params:
   title: "Hugo Bootstrap one-page demo"
   background: "#345282"
-  bootstrap: "4.5.2"
+  bootstrap: "5.3.3"
 markup:
   highlight:
     style: friendly
